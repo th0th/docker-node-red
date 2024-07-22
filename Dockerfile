@@ -40,6 +40,7 @@ RUN apt install -yq \
   libxss1 \
   libxtst6 \
   lsb-release \
+  vim \
   wget \
   xdg-utils
 
