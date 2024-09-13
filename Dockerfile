@@ -3,6 +3,7 @@ FROM nodered/node-red:${BASE_TAG}
 
 USER root
 
+RUN apt update
 RUN apt install -yq \
   ca-certificates \
   chromium \
