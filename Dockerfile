@@ -1,4 +1,5 @@
-FROM nodered/node-red:latest-debian
+ARG BASE_TAG=latest-debian
+FROM nodered/node-red:${BASE_TAG}
 
 USER root
 

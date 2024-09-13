@@ -1,11 +1,11 @@
 name: Build and publish
 on:
-  create:
-    tags:
-      - 'v*'
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      base_tag:
+        description: 'Base node-red image tag'
+        required: false
+        default: 'latest'
 jobs:
   build-and-publish:
     name: Build and publish
