@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       base_tag:
-        description: 'Base node-red image tag'
+        description: "Base node-red image tag"
         required: false
-        default: 'latest'
+        default: "latest-debian"
 jobs:
   build-and-publish:
     name: Build and publish
